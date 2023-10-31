@@ -15,7 +15,7 @@ steps:
     
  
     # Clone your GitHub repository
-    git clone https://github.com/rainrajon/new_one.git
+    git clone https://github.com/rainrajon/31st_oct.git
  
     # Change directory to your repository
     # cd your-repo
