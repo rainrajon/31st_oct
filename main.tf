@@ -12,10 +12,9 @@ terraform {
 }
 
 provider "azurerm" {
-  features {
+  features {}
   subscription_id = "118726_4040 OBU_DataArchitect_SR75751"
   tenant_id = "1f4beacd-b7aa-49b2-aaa1-b8525cb257e0"
-  }
 }
 resource "azurerm_resource_group" "rg" {
  name     = "rg-200600-sc-NonProd"
