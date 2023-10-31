@@ -23,6 +23,6 @@ steps:
     # Run the Python script
     az login
     terraform init
-    terraform plan -out main.tf
-    terraform apply main.tf
+    terraform plan -out main.tfplan
+    terraform apply main.tfplan
   displayName: 'Terraform code'
