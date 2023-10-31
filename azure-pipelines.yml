@@ -1,0 +1,28 @@
+trigger:
+- main
+
+pool:
+  vmImage: 'ubuntu-latest'
+ 
+steps:
+- script: |
+    sudo apt-get install unzip
+    wget https://releases.hashicorp.com/terraform/1.6.2/terraform_1.6.2_linux_amd64.zip
+    unzip terraform_1.6.2_linux_amd64.zip
+    sudo mv terraform /usr/local/bin/
+    terraform --version 
+    sudo apt update
+    
+ 
+    # Clone your GitHub repository
+    git clone https://github.com/rainrajon/new_one.git
+ 
+    # Change directory to your repository
+    # cd your-repo
+ 
+    # Run the Python script
+    az login
+    terraform init
+    terraform plan -out=tfplan
+    terraform apply -auto-approve tfplan
+  displayName: 'Terraform code'
