@@ -14,6 +14,9 @@ terraform {
 provider "azurerm" {
   features {}
 }
+provider "azuread" {
+  tenant_id = "1f4beacd-b7aa-49b2-aaa1-b8525cb257e0"
+}
 resource "azurerm_resource_group" "rg" {
  name     = "rg-200600-sc-NonProd"
  location = "eastus"
