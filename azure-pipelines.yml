@@ -16,6 +16,7 @@ steps:
     # cd your-repo
  
     # Run the Python script
+    az login
     terraform init
     terraform plan -out main.tfplan
     terraform apply main.tfplan
