@@ -18,7 +18,6 @@ provider "azurerm" {
   client_id         = "e0cb7ea1-c1fd-4f54-a314-9119c650b877"
   client_secret     = "O9N8Q~pIOGk4PrYS~mDAbBYMftSeR-0Bh1Uqcb~0"
 }
-}
 resource "azurerm_resource_group" "rg" {
  name     = "rg-200600-sc-NonProd"
  location = "eastus"
