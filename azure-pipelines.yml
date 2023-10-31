@@ -6,14 +6,9 @@ pool:
  
 steps:
 - script: |
-    # sudo apt-get install unzip
-    # wget https://releases.hashicorp.com/terraform/1.6.2/terraform_1.6.2_linux_amd64.zip
-    # unzip terraform_1.6.2_linux_amd64.zip
-    # sudo mv terraform /usr/local/bin/
     terraform --version 
     sudo apt update
     
- 
     # Clone your GitHub repository
     git clone https://github.com/rainrajon/31st_oct.git
  
@@ -23,6 +18,6 @@ steps:
     # Run the Python script
     az login
     terraform init
-    terraform plan -out main.tfplan
-    terraform apply main.tfplan
+    terraform plan -destroy -out main.destroy.tfplan
+    terraform apply main.destroy.tfplan
   displayName: 'Terraform code'
