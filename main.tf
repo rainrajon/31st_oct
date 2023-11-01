@@ -41,7 +41,7 @@ resource "azurerm_storage_account" "adls_storage_account" {
 
   network_rules {
     default_action             = "Deny"
-    ip_rules                   = ["136.226.0.0/16","165.225.0.0/16"]
+    ip_rules                   = ["136.226.0.0/16","165.225.0.0/16","167.103.0.0/16"]
     virtual_network_subnet_ids = [azurerm_subnet.subnet_storage.id]
   }
 
