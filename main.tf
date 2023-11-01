@@ -15,7 +15,7 @@ provider "azurerm" {
   features {}
 }
 resource "azurerm_resource_group" "rg" {
- name     = "rg-sc-prod-demo-new-fdb"
+ name     = "rg-sc-prod-demo-new-fdb-boon"
  location = "eastus"
 }
 resource "azurerm_virtual_network" "vnet" {
@@ -32,7 +32,7 @@ resource "azurerm_subnet" "subnet_storage" {
  service_endpoints    = ["Microsoft.Storage"]
 }
 resource "azurerm_storage_account" "adls_storage_account" {
-  name                = "scstoragenonprod"
+  name                = "scstoragenonprodfineend"
   resource_group_name = azurerm_resource_group.rg.name
   location                 = azurerm_resource_group.rg.location
   account_tier             = "Standard"
