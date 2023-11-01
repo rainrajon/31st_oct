@@ -15,7 +15,7 @@ provider "azurerm" {
   features {}
 }
 resource "azurerm_resource_group" "rg" {
- name     = "rg-200600-sc-NonProd"
+ name     = "rg-sc-prod-demo-new-fdb"
  location = "eastus"
 }
 resource "azurerm_virtual_network" "vnet" {
