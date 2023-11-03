@@ -16,8 +16,8 @@ steps:
     # cd your-repo
  
     # Run the Python script
-    az account set --subscription 992de8fd-65e6-4178-8d06-5f7955ad4425
-    az login --service-principal -u 4de44e41-0451-470a-9643-c04a3978db13 -p _yN8Q~foCfmhjjwOVWOiDEkRyuLAWvoGQT1JDbgJ --tenant aad3cd3b-f269-4d1d-abea-18ea92f2ce38
+    az account set --subscription 9ba952c5-e021-441b-86a3-4589b93b0a9e
+    az login --service-principal -u 6296a5ec-60b8-46d3-9104-4eac1dbf4e9e -p UPW8Q~aS36KRKSYmFFQAzEuYBqA8WhG0VWys_bDL --tenant a84894e7-87c5-40e3-9783-320d0334b3cc
 
     terraform init
     terraform plan -out main.tfplan
