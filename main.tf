@@ -50,8 +50,3 @@ resource "azurerm_storage_account" "adls_storage_account" {
     product = "Storage Conditions"
   }
 }
-resource "azurerm_storage_container" "container" {
-  name                  = "demostorge"
-  storage_account_name  = azurerm_storage_account.adls_storage_account.name
-  container_access_type = "private"
-}
